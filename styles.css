@@ -78,9 +78,12 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+a {
+  color: inherit;
+}
+
 a,
 a:visited {
-  color: inherit;
   font-weight: 400;
   font-size: inherit;
   text-decoration: none;
@@ -111,8 +114,281 @@ h6 {
 
 body {
   font-family: "Inter";
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 [class*=__container] {
   padding: 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #001c3c;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: calc(
+      40px + 39.1 * ((100vw - 320px) / 1440)
+    );
+  }
+}
+@media (min-width: 767px) {
+  h1 {
+    font-size: calc(40px + 23 * (100vw / 1440));
+  }
+}
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 63px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: calc(
+      24px + 30.6 * ((100vw - 320px) / 1440)
+    );
+  }
+}
+@media (min-width: 767px) {
+  h2 {
+    font-size: calc(24px + 18 * (100vw / 1440));
+  }
+}
+@media (min-width: 1440px) {
+  h2 {
+    font-size: 42px;
+  }
+}
+
+h3 {
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  h3 {
+    font-size: calc(
+      20px + 6.8 * ((100vw - 320px) / 1440)
+    );
+  }
+}
+@media (min-width: 767px) {
+  h3 {
+    font-size: calc(20px + 4 * (100vw / 1440));
+  }
+}
+@media (min-width: 1440px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.button {
+  transition: ease 0.5s;
+  color: #ffffff;
+  border-radius: 100px;
+  background-color: #00acec;
+  padding: 10px 24px;
+}
+.button:hover {
+  background-color: #001c3c;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.header {
+  background-color: #ffffff;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  min-height: 85px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 28px;
+  color: #001c3c;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav__menu-item {
+  color: #001c3c;
+}
+
+.nav__menu-link {
+  transition: ease 0.5s;
+}
+
+.sign__in {
+  font-weight: 500;
+  color: #001c3c;
+}
+
+.sign__up {
+  color: #6f6f6f;
+}
+
+.menu-burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-burger__line {
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: black;
+}
+
+.intro {
+  color: #ffffff;
+  background: url(images/IntroBackground.png) no-repeat center;
+  background-size: cover;
+  margin-top: 85px;
+}
+
+.intro__container {
+  padding: 200px 15px 200px 15px;
+}
+
+.intro__title {
+  color: #ffffff;
+}
+
+.intro__block-text {
+  max-width: 752px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.intro__button {
+  padding: 16px 32px;
+}
+
+.about {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.about__body {
+  display: flex;
+}
+
+.about__block-img {
+  background: url(images/MercedesWheel.png) no-repeat center;
+  background-size: cover;
+  flex: 1 1 50%;
+}
+
+.about__info {
+  flex: 1 1 50%;
+}
+
+.about__info-img {
+  width: 100%;
+}
+
+.about__content {
+  color: #6f6f6f;
+  max-width: 539px;
+  margin: 60px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__text {
+  margin-bottom: 60px;
+}
+
+.about__statistics {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.about__statistics-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__statistics-item-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #001c3c;
+}
+
+.about__statistics-item-text {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .nav__menu {
+    display: none;
+  }
+  .header__logo {
+    flex: 1 1 auto;
+  }
+  .menu-burger {
+    display: flex;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .about__content {
+    margin: 20px;
+  }
+  .about__block-img {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .sign {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,64 @@
+@import "_adaptiveFontMixin";
+@import "_variables";
+@import "_templates";
+
 body {
   font-family: "Inter";
+  font-size: $body1;
+  line-height: 1.4;
 }
 
 [class*="__container"] {
   padding: 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $primary;
+}
+
+h1 {
+  font-weight: 700;
+  @include adaptive-font(63, 40);
+  line-height: 1.2;
+}
+
+h2 {
+  font-weight: 700;
+  @include adaptive-font(42, 24);
+}
+
+h3 {
+  font-weight: 600;
+  @include adaptive-font(24, 20);
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.hover-underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.button {
+  transition: ease 0.5s;
+  color: $white;
+  border-radius: 100px;
+  background-color: $primaryLight;
+  padding: 10px 24px;
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+.ta-center {
+  text-align: center;
 }
