@@ -329,6 +329,7 @@ h4 {
 
 .about__info-img {
   width: 100%;
+  max-width: 100%;
 }
 
 .about__content {
@@ -347,7 +348,8 @@ h4 {
 
 .about__statistics {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -378,13 +380,16 @@ h4 {
     display: flex;
     margin-left: 15px;
   }
-}
-@media (max-width: 767px) {
   .about__content {
     margin: 20px;
   }
+}
+@media (max-width: 767px) {
   .about__block-img {
     display: none;
+  }
+  .about__info {
+    flex: 1 1 100%;
   }
 }
 @media (max-width: 480px) {

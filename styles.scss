@@ -118,6 +118,7 @@
 }
 .about__info-img {
   width: 100%;
+  max-width: 100%;
 }
 
 .about__content {
@@ -136,7 +137,8 @@
 
 .about__statistics {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 15px;
 }
 .about__statistics-item {
@@ -152,7 +154,7 @@
 }
 
 .about__statistics-item-text {
-  text-align: center
+  text-align: center;
 }
 
 // ------------------------ media

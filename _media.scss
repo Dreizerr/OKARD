@@ -11,15 +11,19 @@
     display: flex;
     margin-left: 15px;
   }
-}
 
-@media (max-width: 767px) {
   .about__content {
     margin: 20px;
   }
+}
 
+@media (max-width: 767px) {
   .about__block-img {
     display: none;
+  }
+
+  .about__info {
+    flex: 1 1 100%;
   }
 }
 
