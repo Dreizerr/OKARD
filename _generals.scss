@@ -30,6 +30,7 @@ h1 {
 h2 {
   font-weight: 700;
   @include adaptive-font(42, 24);
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -61,4 +62,12 @@ h4 {
 
 .ta-center {
   text-align: center;
+}
+
+.section-intro {
+  margin-bottom: 60px;
+}
+
+.section-descrp {
+  color: #6f6f6f;
 }

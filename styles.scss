@@ -99,11 +99,6 @@
 
 // ------------------------------------- about
 
-.about {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 .about__body {
   display: flex;
 }
@@ -127,14 +122,6 @@
   margin: 60px;
 }
 
-.about__title {
-  margin-bottom: 20px;
-}
-
-.about__text {
-  margin-bottom: 60px;
-}
-
 .about__statistics {
   display: flex;
   justify-content: space-around;
@@ -155,6 +142,12 @@
 
 .about__statistics-item-text {
   text-align: center;
+}
+
+// --------------------------------------- membership
+
+.membership__container {
+  padding-top: 85px;
 }
 
 // ------------------------ media
