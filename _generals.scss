@@ -51,7 +51,7 @@ h4 {
 }
 
 .button {
-  transition: ease 0.5s;
+  transition: ease 0.7s;
   color: $white;
   border-radius: 100px;
   background-color: $primaryLight;
@@ -71,4 +71,15 @@ h4 {
 
 .section-descrp {
   color: #6f6f6f;
+}
+
+.slider-pagination {
+  display: none;
+  position: static;
+  margin-top: 20px;
+  .swiper-pagination-bullet {
+    width: 10px;
+    background-color: $primary;
+    height: 10px;
+  }
 }

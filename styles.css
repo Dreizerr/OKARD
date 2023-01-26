@@ -207,7 +207,7 @@ h4 {
 }
 
 .button {
-  transition: ease 0.5s;
+  transition: ease 0.7s;
   color: #ffffff;
   border-radius: 100px;
   background-color: #00acec;
@@ -227,6 +227,17 @@ h4 {
 
 .section-descrp {
   color: #6f6f6f;
+}
+
+.slider-pagination {
+  display: none;
+  position: static;
+  margin-top: 20px;
+}
+.slider-pagination .swiper-pagination-bullet {
+  width: 10px;
+  background-color: #001c3c;
+  height: 10px;
 }
 
 .header {
@@ -370,6 +381,209 @@ h4 {
   padding-top: 85px;
 }
 
+.membership__slide {
+  width: 100%;
+}
+
+.membership__swiper-wrapper {
+  align-items: center;
+}
+
+.plan-card {
+  color: #ffffff;
+  border-radius: 12px;
+  max-width: 360px;
+  background-color: black;
+  margin: 0 auto;
+}
+.plan-card h3 {
+  color: #ffffff;
+}
+
+.plan-card__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 32px 24px 40px 24px;
+}
+
+.plan-card__head {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: #ffffff solid 2px;
+}
+
+.plan-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 50px;
+  flex: 1 1 auto;
+}
+
+.plan-card__item {
+  padding-left: 28px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+}
+.plan-card__item::before {
+  content: "";
+  width: 16px;
+  top: 3px;
+  left: 0;
+  height: 16px;
+  position: absolute;
+  background: url(images/check-circle.svg) no-repeat center;
+}
+
+.plan-card__item-terms {
+  color: #ffffff;
+}
+
+.plan-card__item-terms--weight-500 {
+  font-weight: 500;
+}
+
+.plan-card__button {
+  padding: 11px 96px;
+  margin: 0 auto;
+}
+.plan-card__button:hover {
+  color: black;
+  background-color: #ffffff;
+}
+
+.plan-card--backgroung-primary {
+  background-color: #001c3c;
+}
+.plan-card--backgroung-primary .plan-card__head {
+  border-bottom: 2px solid #00acec;
+}
+
+.stamps__container {
+  padding: 160px 15px 90px 15px;
+}
+
+.stamps__intro {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.stamps__content {
+  max-width: 912px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 45px;
+}
+
+.stamps__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.stamps__item {
+  height: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+}
+
+.stamps__item-img {
+  height: 40px;
+}
+
+.stamps__item-text {
+  font-size: 14px;
+  color: #6f6f6f;
+}
+
+.stamps__slider {
+  width: 100%;
+}
+
+.questions__body {
+  display: flex;
+}
+
+.questions__block-img {
+  flex: 0 1 50%;
+  background: url(images/mechanic.png) no-repeat center;
+  background-size: cover;
+}
+
+.questions__intro {
+  margin-bottom: 0px;
+  padding-bottom: 40px;
+  border-bottom: 1.5px solid #ebebeb;
+}
+
+.questions__spollers {
+  padding: 24px 15px 0px 45px;
+  flex: 0 1 50%;
+}
+
+.questions__spollers-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.questions__spoller {
+  transition: max-height ease 0.8s;
+  position: relative;
+  max-height: 82px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px 0px;
+  border-bottom: 1.5px solid #ebebeb;
+}
+.questions__spoller.active {
+  max-height: 400px;
+}
+.questions__spoller.active .questions__spoller-title::after {
+  transform: rotate(180deg);
+}
+
+.questions__spoller-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+.questions__spoller-title::after {
+  content: "";
+  transition: all ease 1s;
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 15px;
+  height: 8px;
+  background: url(images/arrow.svg) no-repeat;
+  background-size: cover;
+}
+
+.questions__spoller-text {
+  transition: all ease 0.7s;
+  color: #6f6f6f;
+}
+
 @media (max-width: 991px) {
   .nav__menu {
     display: none;
@@ -383,6 +597,17 @@ h4 {
   }
   .about__content {
     margin: 20px;
+  }
+  .slider-pagination {
+    display: block;
+  }
+  .questions__block-img {
+    display: none;
+  }
+  .questions__spollers {
+    padding: 0px 15px;
+    flex: 1 1 100%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {

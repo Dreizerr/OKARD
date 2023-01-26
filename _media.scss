@@ -15,6 +15,20 @@
   .about__content {
     margin: 20px;
   }
+
+  .slider-pagination {
+    display: block;
+  }
+
+  .questions__block-img {
+    display: none;
+  }
+
+  .questions__spollers {
+    padding: 0px 15px;
+    flex: 1 1 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 767px) {
