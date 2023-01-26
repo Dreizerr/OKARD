@@ -43,10 +43,20 @@
   .about__info {
     flex: 1 1 100%;
   }
+
+  .questions__spoller {
+  }
+
+  
 }
 
 @media (max-width: 480px) {
   .sign {
     display: none;
   }
+
+  .questions__spoller-title {
+    max-width: 200px;
+  }
+
 }
