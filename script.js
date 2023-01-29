@@ -57,10 +57,26 @@ const stampsSlider = new Swiper(".stamps__slider", {
 // ------------------------------------ spollers
 
 let spollers = [...document.querySelectorAll(".spoller")];
-console.log(spollers);
 
 spollers.forEach((spoller) => {
   spoller.addEventListener("click", () => {
     spoller.classList.toggle("active");
   });
 });
+
+// let l1 = [2, 4, 3];
+
+// let l2 = [5, 6, 4];
+
+// function addTwoNumbers(l1, l2) {
+//   l1.reverse();
+//   l2.reverse();
+
+//   let a = +l1.join("");
+//   let b = +l2.join("");
+
+//   result = a + b;
+//   return result;
+// }
+
+// console.log(addTwoNumbers(l1, l2));

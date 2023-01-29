@@ -151,14 +151,15 @@
 }
 
 .membership__slide {
-  width: 100%;
+  height: auto;
 }
 
 .membership__swiper-wrapper {
-  align-items: center;
+  align-items: stretch;
 }
 
 .plan-card {
+  height: 100%;
   color: $white;
   border-radius: 12px;
   max-width: 360px;

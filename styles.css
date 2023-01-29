@@ -382,14 +382,15 @@ h4 {
 }
 
 .membership__slide {
-  width: 100%;
+  height: auto;
 }
 
 .membership__swiper-wrapper {
-  align-items: center;
+  align-items: stretch;
 }
 
 .plan-card {
+  height: 100%;
   color: #ffffff;
   border-radius: 12px;
   max-width: 360px;
@@ -618,6 +619,11 @@ h4 {
   }
 }
 
+@media (max-width: 1150px) {
+  .slider-pagination {
+    display: block;
+  }
+}
 @media (max-width: 991px) {
   .nav__menu {
     display: none;
@@ -631,9 +637,6 @@ h4 {
   }
   .about__content {
     margin: 20px;
-  }
-  .slider-pagination {
-    display: block;
   }
   .questions__block-img {
     display: none;
@@ -650,6 +653,9 @@ h4 {
   }
   .about__info {
     flex: 1 1 100%;
+  }
+  .membership__swiper-wrapper {
+    align-items: center;
   }
 }
 @media (max-width: 480px) {
