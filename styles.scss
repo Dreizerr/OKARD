@@ -211,7 +211,9 @@
 }
 
 .plan-card__button {
-  padding: 11px 96px;
+  padding: 11px 15px;
+  // height: 11px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -362,6 +364,7 @@
 // --------------------------------- footer
 
 .footer {
+  display: none;
   color: #c7c7c7;
   background-color: $primary;
 }
