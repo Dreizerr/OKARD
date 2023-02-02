@@ -15,7 +15,7 @@ const membershipSlider = new Swiper(".membership__slider", {
       autoHeight: true,
     },
 
-    700: {
+    768: {
       slidesPerView: 2,
       autoHeight: false,
     },
@@ -64,19 +64,10 @@ spollers.forEach((spoller) => {
   });
 });
 
-// let l1 = [2, 4, 3];
 
-// let l2 = [5, 6, 4];
 
-// function addTwoNumbers(l1, l2) {
-//   l1.reverse();
-//   l2.reverse();
 
-//   let a = +l1.join("");
-//   let b = +l2.join("");
 
-//   result = a + b;
-//   return result;
-// }
 
-// console.log(addTwoNumbers(l1, l2));
+
+

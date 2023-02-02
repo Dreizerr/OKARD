@@ -50,6 +50,15 @@ h4 {
   }
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 28px;
+  color: $primary;
+}
+
 .button {
   transition: ease 0.7s;
   color: $white;
@@ -57,7 +66,8 @@ h4 {
   background-color: $primaryLight;
   padding: 10px 24px;
   &:hover {
-    background-color: $primary;
+    color: black;
+    background-color: $white;
   }
 }
 
@@ -82,4 +92,31 @@ h4 {
     background-color: $primary;
     height: 10px;
   }
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+}
+
+.social__item {
+  transition: ease 0.7s;
+  border-radius: 50%;
+  border: 1px solid $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  &:hover {
+    .social__img {
+      filter: invert(100%);
+    }
+    background-color: $white;
+  }
+}
+
+.social__img {
+  transition: ease 0.7s;
+  max-width: 100%;
 }
