@@ -1,13 +1,39 @@
-const membershipSlider = new Swiper(".membership__slider", {
-  simulateTouch: false,
-
+const carsSlider = new Swiper(".cars__slider", {
+  spaceBetween: 30,
   loop: true,
+  grabCursor: true,
+  pagination: {
+    clickable: true,
+    el: ".cars__pagination",
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+
+    1150: {
+      slidesPerView: 2.7,
+    },
+
+    1441: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+const membershipSlider = new Swiper(".membership__slider", {
+  // simulateTouch: false,
+  grabCursor: true,
 
   spaceBetween: 50,
 
   pagination: {
-    el: ".slider-pagination",
+    clickable: true,
+    el: ".membership__pagination",
   },
+
+  loop: true,
 
   breakpoints: {
     400: {
@@ -21,10 +47,13 @@ const membershipSlider = new Swiper(".membership__slider", {
     },
 
     1150: {
+      loop: false,
       slidesPerView: 3,
     },
   },
 });
+
+
 
 const stampsSlider = new Swiper(".stamps__slider", {
   slidesPerGroup: 7,
@@ -63,11 +92,3 @@ spollers.forEach((spoller) => {
     spoller.classList.toggle("active");
   });
 });
-
-
-
-
-
-
-
-

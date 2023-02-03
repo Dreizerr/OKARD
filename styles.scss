@@ -135,6 +135,26 @@
   text-align: center;
 }
 
+// ---------------------------------------- cars
+
+.cars__intro {
+  max-width: 421px;
+  margin-bottom: 60px;
+}
+
+.cars__container {
+  max-width: 1440px;
+  padding: 160px 15px;
+}
+
+.cars__cards {
+  display: flex;
+}
+
+.cars__pagination {
+  margin-top: 40px;
+}
+
 // --------------------------------------- membership
 
 .membership__container {
@@ -149,80 +169,9 @@
   align-items: stretch;
 }
 
-.plan-card {
-  height: 100%;
-  color: $white;
-  border-radius: 12px;
-  max-width: 360px;
-  background-color: $black;
-  margin: 0 auto;
-  h3 {
-    color: $white;
-  }
-}
-.plan-card__wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 32px 24px 40px 24px;
-}
-.plan-card__head {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 32px;
-  padding-bottom: 32px;
-  border-bottom: $white solid 2px;
-}
-
-.plan-card__body {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 50px;
-  flex: 1 1 auto;
-}
-
-.plan-card__item {
-  padding-left: 28px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: space-between;
-  &::before {
-    content: "";
-    width: 16px;
-    top: 3px;
-    left: 0;
-    height: 16px;
-    position: absolute;
-    background: url(images/check-circle.svg) no-repeat center;
-  }
-}
-
-.plan-card__item-terms {
-  color: $white;
-}
-
-.plan-card__item-terms--weight-500 {
-  font-weight: 500;
-}
-
-.plan-card__button {
-  padding: 11px 15px;
-  // height: 11px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.plan-card--backgroung-primary {
-  background-color: $primary;
-
-  .plan-card__head {
-    border-bottom: 2px solid $primaryLight;
-  }
+.membership__pagination {
+  margin-top: 40px;
+  display: block;
 }
 
 // --------------------------- stamps
@@ -364,7 +313,7 @@
 // --------------------------------- footer
 
 .footer {
-  display: none;
+  // display: none;
   color: #c7c7c7;
   background-color: $primary;
 }
@@ -397,15 +346,7 @@
   margin-bottom: 30px;
 }
 
-.footer-menu {
-  flex: 0 1 70%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-.footer-menu__item-title {
+.footer__item-title {
   margin-bottom: 30px;
   color: $white;
 }

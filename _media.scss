@@ -1,7 +1,10 @@
-@media (max-width: 1150px) {
-  .slider-pagination {
-    display: block;
+@media (min-width: 1441px) {
+  .cars__container {
+    max-width: 1200px;
   }
+}
+
+@media (max-width: 1150px) {
 }
 
 @media (max-width: 991px) {
@@ -48,6 +51,14 @@
 
   .membership__swiper-wrapper {
     align-items: center;
+  }
+  .footer__inner {
+    flex-wrap: wrap;
+    // justify-content: space-around;
+  }
+
+  .footer__container {
+    padding: 50px 15px;
   }
 }
 
